@@ -21,6 +21,6 @@ test('2. Sign in positive process ', async ({ page }) => {
   await expect(page.locator("h1.text-xs-center")).toContainText('Sign in');
   await emailFieldLoc.fill(email);
   await passwordFieldLoc.fill(password);
-  await signInLinkLoc.click();
+  await signInButtonLoc.click();
   await expect(page.locator('.nav-item [href="/@4samsmith/"]')).toBeVisible(); //need to be handled selector is wrong
 });
